@@ -29,6 +29,7 @@ Levando-se em consideração esses aspectos, usaremos os algoritmos K-means, DBS
 O algoritmo K-means é considerado 	um aprendizado do tipo não supervisionado, isso significa que é necessário somente os dados, sem ser necessário conhecimento prévio das classes. Este algoritmo tem por objetivo encontrar uma alocação dos dados em clusters de maneira que, dentro de cada cluster, os dados estejam o mais próximos possível, assumindo que quanto mais próximos eles estiverem, mais parecidos eles são. 
 
 Para utilizar o algoritmo K-means, primeiramente é definido quantos clusters devem ser encontrados. Para isso é definido o __K__, o valor de K é definido através da dedução de quantos agrupamentos os dados sejam segmentados. É possível utilizar a técnica *Elbow method* (método do cotovelo) para ajudar a encontrar o número apropriado de clusters em um conjunto de dados. Também é definido o número de iterações, onde as iterações são o número de vezes que o algoritmo repetirá a atribuição do cluster e a movimentação dos centroides.
+
 ![alt kmeans](https://raw.githubusercontent.com/marcelogarbin/clustering-com-r-studio/master/img/kmeans.gif)
 
 ### DBScan
