@@ -4,7 +4,7 @@ setwd("D:/_dev/Web/www/_mestrado/agrupamento-com-r-studio/Iris")
 # Instala pacotes
 #install.packages("factoextra")
 # Chama pacotes
-#library(factoextra)
+library(factoextra)
 
 # Carragamento do dataset, informa que o dataset possui cabeçalho
 Iris = read.csv("iris_data.csv", header = T)
@@ -37,3 +37,4 @@ plot(Iris2.features[], col = results$cluster)
 
 # Plotagem do resultados: neste exemplo (petal.length x petal.width)
 plot(Iris2.features[c("petal.length", "petal.width")], col = results$cluster)
+

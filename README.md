@@ -1,10 +1,10 @@
 # Clustering com R
 
 ### Requisito
- - R
- - RStudio
- - Dataset
- - Scripts
+ - [R](https://www.r-project.org/)
+ - [RStudio](https://www.rstudio.com/)
+ - [Dataset](https://archive.ics.uci.edu/ml/datasets.php)
+ - [Scripts](https://github.com/marcelogarbin/clustering-com-r-studio/tree/master/Iris)
 
 ### Sobre
 Neste trabalho proposto de Docência Orientada I, será feito a utilização do software RStudio para análise de agrupamento de dados. Será feita a demonstração de como utilizar o RStudio juntamente com os algoritmos: K-means, DBScan e Hierárquico.
@@ -81,3 +81,4 @@ O comportamento deste algoritmo depende como o par de cluster mais próximo é d
 - https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68
 - http://www.sthda.com/english/wiki/print.php?id=246
 - http://dcm.ffclrp.usp.br/~augusto/teaching/ami/AM-I-Clustering.pdf
+- https://www.datacamp.com/community/tutorials/k-means-clustering-r
