@@ -63,8 +63,10 @@ O comportamento deste algoritmo depende como o par de cluster mais próximo é d
 
 ![alt hSingle](https://raw.githubusercontent.com/marcelogarbin/clustering-com-r-studio/master/img/hierarquico-single.png)
 - __Single Link__: Distância entre dois clusters é a distância entre os pontos mais próximos. Também chamado “agrupamento de vizinhos”;
+
 ![alt hAverage](https://raw.githubusercontent.com/marcelogarbin/clustering-com-r-studio/master/img/hierarquico-average.png)
 - __Average Link__: Distância entre clusters é a distância entre os centroides (agrupamento pela média);
+
 ![alt hComplete](https://raw.githubusercontent.com/marcelogarbin/clustering-com-r-studio/master/img/hierarquico-complete.png)
 - __Complete Link__: Distância entre clusters é a distância entre os pontos mais distantes.
 
