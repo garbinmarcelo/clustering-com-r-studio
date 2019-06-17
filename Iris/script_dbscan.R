@@ -2,8 +2,8 @@
 setwd("D:/_dev/Web/www/_mestrado/agrupamento-com-r-studio/Iris")
 
 # Instala pacotes
-#install.packages("fpc")
-#install.packages("dbscan")
+install.packages("fpc")
+install.packages("dbscan")
 # Chama pacotes
 library(fpc)
 library(dbscan)
@@ -36,14 +36,3 @@ plot(Iris2[], col = results$cluster)
 
 # Plotagem do resultados: neste exemplo (petal.length x petal.width)
 plot(Iris2[c("sepal.length", "sepal.width")], col = results$cluster)
-
-# Plotagem dos dados utilizando coordenadadas discriminantes em um arquivo .png
-# Salva em png plot
-png(file="resultado_dbscan.png", width=1000, height=700)
-plotcluster(Iris2.features, results$cluster, method = "dc")
-
-results_to_save = data.frame(Iris2.features, results$cluster)
-
-# Gravação dos resultados em arquivos
-write.csv(results_to_save, file = "resultado_dbscan.csv")
-dev.off()

@@ -56,15 +56,21 @@ O DBSCAN requer dois parâmetros:
 Para que seja determinado o melhor valor para eps, é calculado as distâncias vizinhas mais próximas em uma matriz de pontos. Essa técnica é chamada de knee (joelho), onde ocorre uma mudança acentuada ao longo da curva de distância K.
 
 ### Hierárquico
-Nesse algoritmo ao usá-lo é criada uma árvore na qual os objetos são as folhas e os nós internos revelam a estrutura de similaridade dos pontos. Essa árvore é chamada de dendograma.
+Nesse algoritmo ao usá-lo é criada uma árvore na qual os objetos são as folhas e os nós internos revelam a estrutura de similaridade dos pontos. Essa árvore é chamada de dendograma. Essa estrutura indica o número de clusters.
+Eles podem ser classificados em dois tipos: Aglomerativos e Divisivos.
 
-O comportamento deste algoritmo depende como o par de cluster mais próximo é definido, podendo ser definido em:
+O comportamento deste algoritmo depende como o par de cluster mais próximo é definido, podendo ser:
 
 - __Single Link__: Distância entre dois clusters é a distância entre os pontos mais próximos. Também chamado “agrupamento de vizinhos”;
-- __Average Link__: Distância entre clusters é a distância entre os centroides;
+- __Average Link__: Distância entre clusters é a distância entre os centroides (agrupamento pela média);
 - __Complete Link__: Distância entre clusters é a distância entre os pontos mais distantes.
 
+![alt dbscan](https://raw.githubusercontent.com/marcelogarbin/clustering-com-r-studio/master/img/hierarquico.png)
+
+
 ### Coordenadas Discriminantes
+Coordenadas Discriminantes é um método algébrico que utiliza coorelações lineares para transformar vários campos em um único que descreva todos os campos involvidos;
+Esse valor único representa ocorrencias relacionadas aos campos representados.
 
 ### Créditos
 - Evaristo José Do Nascimento
@@ -82,3 +88,4 @@ O comportamento deste algoritmo depende como o par de cluster mais próximo é d
 - http://www.sthda.com/english/wiki/print.php?id=246
 - http://dcm.ffclrp.usp.br/~augusto/teaching/ami/AM-I-Clustering.pdf
 - https://www.datacamp.com/community/tutorials/k-means-clustering-r
+- https://discuss.analyticsvidhya.com/t/interpretation-result-of-k-means-algorithm/17750/3
