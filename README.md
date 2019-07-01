@@ -59,6 +59,9 @@ Para que seja determinado o melhor valor para eps, é calculado as distâncias v
 Nesse algoritmo ao usá-lo é criada uma árvore na qual os objetos são as folhas e os nós internos revelam a estrutura de similaridade dos pontos. Essa árvore é chamada de dendograma. Essa estrutura indica o número de clusters.
 Eles podem ser classificados em dois tipos: Aglomerativos e Divisivos.
 
+- Métodos Aglomerativos – Nesse caso, todos os elementos começam separados e vão sendo agrupados em etapas, um a um, até que tenhamos um único cluster com todos os elementos. O número ideal de clusters é escolhido dentre todas as opções.
+- Métodos Divisivos – No método divisivo todos os elementos começam juntos em um único cluster, e vão sendo separados um a um, até que cada elemento seja seu próprio cluster. Assim como no método aglomerativo, escolhemos o número ótimo de clusters dentre todas as possíveis combinações.
+
 O comportamento deste algoritmo depende como o par de cluster mais próximo é definido, podendo ser:
 
 ![alt hSingle](https://raw.githubusercontent.com/marcelogarbin/clustering-com-r-studio/master/img/hierarquico-single.png)
@@ -92,3 +95,5 @@ Esse valor único representa ocorrencias relacionadas aos campos representados.
 - http://dcm.ffclrp.usp.br/~augusto/teaching/ami/AM-I-Clustering.pdf
 - https://www.datacamp.com/community/tutorials/k-means-clustering-r
 - https://discuss.analyticsvidhya.com/t/interpretation-result-of-k-means-algorithm/17750/3
+- http://www.sthda.com/english/wiki/wiki.php?id_contents=7940
+- https://cran.r-project.org/web/packages/dbscan/vignettes/dbscan.pdf

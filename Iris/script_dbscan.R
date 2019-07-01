@@ -2,14 +2,14 @@
 setwd("D:/_dev/Web/www/_mestrado/agrupamento-com-r-studio/Iris")
 
 # Instala pacotes
-install.packages("fpc")
-install.packages("dbscan")
+#install.packages("fpc")
+#install.packages("dbscan")
 # Chama pacotes
 library(fpc)
 library(dbscan)
 
 # Carragamento do dataset, informa que o dataset possui cabeçalho
-Iris = read.csv("iris_data.csv", header = T)
+Iris = read.csv("iris_data.csv", header = TRUE)
 
 # É realizada cópia do dataset em uma nova variável 
 # omitindo possíveis erros de dados (ausencia de valores, not-a-number, etc..)
@@ -29,6 +29,7 @@ View(Iris2.features)
 kNNdistplot(Iris2.features, k = 3)
 
 results <- dbscan(Iris2.features, eps = 0.6, minPts = 4)
+
 results
 
 # Plotagem do resultados: neste exemplo (petal.length x petal.width)

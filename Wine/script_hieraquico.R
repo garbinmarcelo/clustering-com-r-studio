@@ -24,3 +24,4 @@ plot(Wine2.features[], col = clusters)
 
 #pplotagem do resultados: neste exemplo (petal.length x petal.width)
 plot(Wine2.features[c("Alcohol", "Magnesium")], col = clusters)
+

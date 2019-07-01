@@ -16,7 +16,7 @@ View(Wine2.features)
 #install.packages("dbscan")
 library(dbscan)
 
-kNNdistplot(Wine2.features, k = 3)
+kNNdistplot(Wine2.features, k = 30)
 
 results <- dbscan(Wine2.features, eps = 48, minPts = 3)
 results
