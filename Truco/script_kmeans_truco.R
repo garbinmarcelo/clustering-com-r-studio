@@ -1,4 +1,4 @@
-# Define pasta de trabalho e localização do arquivo dataset
+# Define pasta de trabalho (alterar localização conforme pastas do seu sistema)
 setwd("D:/_dev/Web/www/_mestrado/agrupamento-com-r-studio/Truco")
 
 # Instala pacotes
